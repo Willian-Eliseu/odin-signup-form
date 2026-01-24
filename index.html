@@ -8,6 +8,75 @@
     <script src="script.js"></script>
 </head>
 <body>
-    teste
+    <!-- imagem por Takashi S - https://unsplash.com/pt-br/@bookslope . disponível em unsplash - https://unsplash.com/pt-br/fotografias/beco-estreito-entre-predios-com-detalhes-amarelos-_ycAzLx1T84 -->
+
+    <main>
+        <aside>
+            <article>
+                <img src="./odin-lined.png" alt="logo odin" height="100">
+                <p>ODIN</p>
+            </article>
+            <footer>
+                Image by <a href="https://unsplash.com/pt-br/@bookslope" target="_blank">Takashi S</a> on <a href="https://unsplash.com/pt-br/fotografias/beco-estreito-entre-predios-com-detalhes-amarelos-_ycAzLx1T84" target="_blank">Unsplash</a>
+            </footer>
+        </aside>
+        
+        <section>
+            <!-- initial text -->
+            <article class="first-block">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum expedita quos animi tempora. Maxime nobis beatae illum. Maxime quod velit ipsa molestiae quasi qui voluptas delectus inventore. Earum, quod. Doloremque.
+                </p>
+                <p>
+                    You <em>know</em> you want to.
+                </p>
+            </article>
+
+            <!-- form -->
+            <article class="second-block">
+                <form id="form-subscribe">
+                    <fieldset>
+                        <legend>
+                            Let's do this!
+                        </legend>
+                        <div class="flex-container">
+                            <div class="flex-item">
+                                <label for="firstName">FIRST NAME</label>
+                                <input type="text" name="firstName" id="firstName">
+                            </div>
+                            <div class="flex-item">
+                                <label for="lastName">LAST NAME</label>
+                                <input type="text" name="lastName" id="lastName">
+                            </div>
+                            <div class="flex-item">
+                                <label for="email">EMAIL</label>
+                                <input type="text" name="email" id="email">
+                            </div>
+                            <div class="flex-item">
+                                <label for="phoneNumber">PHONE NUMBER</label>
+                                <input type="text" name="phoneNumber" id="phoneNumber">
+                            </div>
+                            <div class="flex-item">
+                                <label for="password">PASSWORD</label>
+                                <input type="text" name="password" id="password">
+                            </div>
+                            <div class="flex-item">
+                                <label for="passwordConfirm">CONFIRM PASSWORD</label>
+                                <input type="text" name="passwordConfirm" id="passwordConfirm">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+
+            <!-- button form and call to login -->
+            <article class="third-block">
+                <button type="submit" form="form-subscribe">
+                    Create Account
+                </button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
