@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
+
 <body>
     <!-- imagem por Takashi S - https://unsplash.com/pt-br/@bookslope . disponível em unsplash - https://unsplash.com/pt-br/fotografias/beco-estreito-entre-predios-com-detalhes-amarelos-_ycAzLx1T84 -->
 
@@ -17,15 +19,19 @@
                 <p>ODIN</p>
             </article>
             <footer>
-                Image by <a href="https://unsplash.com/pt-br/@bookslope" target="_blank">Takashi S</a> on <a href="https://unsplash.com/pt-br/fotografias/beco-estreito-entre-predios-com-detalhes-amarelos-_ycAzLx1T84" target="_blank">Unsplash</a>
+                Image by <a href="https://unsplash.com/pt-br/@bookslope" target="_blank">Takashi S</a> on <a
+                    href="https://unsplash.com/pt-br/fotografias/beco-estreito-entre-predios-com-detalhes-amarelos-_ycAzLx1T84"
+                    target="_blank">Unsplash</a>
             </footer>
         </aside>
-        
+
         <section>
             <!-- initial text -->
             <article class="first-block">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum expedita quos animi tempora. Maxime nobis beatae illum. Maxime quod velit ipsa molestiae quasi qui voluptas delectus inventore. Earum, quod. Doloremque.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum expedita quos animi tempora. Maxime
+                    nobis beatae illum. Maxime quod velit ipsa molestiae quasi qui voluptas delectus inventore. Earum,
+                    quod. Doloremque.
                 </p>
                 <p>
                     You <em>know</em> you want to.
@@ -40,29 +46,35 @@
                             Let's do this!
                         </legend>
                         <div class="flex-container">
-                            <div class="flex-item">
-                                <label for="firstName">FIRST NAME</label>
-                                <input type="text" name="firstName" id="firstName">
+                            <div class="flex-row">
+                                <div class="flex-item">
+                                    <label for="firstName">FIRST NAME</label>
+                                    <input type="text" name="firstName" id="firstName" required>
+                                </div>
+                                <div class="flex-item">
+                                    <label for="lastName">LAST NAME</label>
+                                    <input type="text" name="lastName" id="lastName" required>
+                                </div>
                             </div>
-                            <div class="flex-item">
-                                <label for="lastName">LAST NAME</label>
-                                <input type="text" name="lastName" id="lastName">
+                            <div class="flex-row">
+                                <div class="flex-item">
+                                    <label for="email">EMAIL</label>
+                                    <input type="text" name="email" id="email" required>
+                                </div>
+                                <div class="flex-item">
+                                    <label for="phoneNumber">PHONE NUMBER</label>
+                                    <input type="text" name="phoneNumber" id="phoneNumber" required>
+                                </div>
                             </div>
-                            <div class="flex-item">
-                                <label for="email">EMAIL</label>
-                                <input type="text" name="email" id="email">
-                            </div>
-                            <div class="flex-item">
-                                <label for="phoneNumber">PHONE NUMBER</label>
-                                <input type="text" name="phoneNumber" id="phoneNumber">
-                            </div>
-                            <div class="flex-item">
-                                <label for="password">PASSWORD</label>
-                                <input type="text" name="password" id="password">
-                            </div>
-                            <div class="flex-item">
-                                <label for="passwordConfirm">CONFIRM PASSWORD</label>
-                                <input type="text" name="passwordConfirm" id="passwordConfirm">
+                            <div class="flex-row">
+                                <div class="flex-item">
+                                    <label for="password">PASSWORD</label>
+                                    <input type="password" name="password" id="password" class="password" required>
+                                </div>
+                                <div class="flex-item">
+                                    <label for="passwordConfirm">CONFIRM PASSWORD</label>
+                                    <input type="password" name="passwordConfirm" id="passwordConfirm" class="password-check" required>
+                                </div>
                             </div>
                         </div>
                     </fieldset>
@@ -74,9 +86,12 @@
                 <button type="submit" form="form-subscribe">
                     Create Account
                 </button>
-                <p>Already have an account? <a href="#">Log in</a></p>
+                <p>Already have an account? <a href="javascript:alert('The Login page was not implemented on this project')">Log in</a></p>
             </article>
         </section>
     </main>
+
+    <script defer src="script.js"></script>
 </body>
+
 </html>

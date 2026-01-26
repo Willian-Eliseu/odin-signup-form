@@ -82,12 +82,89 @@ section > article {
     background-color: #fff;
     box-shadow: 0px 2px 2px 1px #00000091;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    gap: 1em;
 }
+
+#form-subscribe{
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    margin: auto 2em;
+    gap: 1em;
+}
+
+#form-subscribe > fieldset {
+    border: none;
+}
+
+#form-subscribe > fieldset > legend {
+    padding-left: 1em;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 1em;
+    gap: 1em;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    width: 100%;
+}
+
+.flex-item{    
+    flex-grow: 1;
+}
+
+.flex-item > label {
+    display: block;
+    font-size: 1.2em;
+}
+
+.flex-item > input {
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    width: 90%;
+}
+
+.flex-item > input[type="text"]:focus,
+.flex-item > input[type="email"]:focus,
+.flex-item > input[type="tel"]:focus {
+    outline: none;
+    border-color: #596d48;
+    box-shadow: 0 0 5px #596d48;
+}
+
+.password:focus {
+    outline: none;
+    border-color: #596d48;
+    box-shadow: 0 0 5px #596d48;
+}
+
+.password-check:focus {
+    outline: none;
+    border-color: red;
+    box-shadow: 0 0 5px red;
+}
+
+
 
 /* third block */
 .third-block{
-    background-color: #f3f4f6;
-    
+    background-color: #f3f4f6;    
     gap: 1em;
     padding: 4em;
 }
